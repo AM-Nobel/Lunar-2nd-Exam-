@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=PT+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ================================= Common CSS Start ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6,
+li,
+p,
+a,
+span,
+img,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --PT: "PT Sans", sans-serif;
+  --HK: "Hanken Grotesk", sans-serif;
+  --black_color: #000;
+  --white_color: #fff;
+  --button_color: #b070ff;
+}
+
+body {
+  background-image: url("../image/dipper.png");
+}
+
+/* body{
+  background: url(../image/dipper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* ================================= Common CSS End ================================ */
+
+/* ================================= Navbar Part CSS Start ================================ */
+
+.customNavbar {
+  background-color: var(--white_color);
+  box-shadow: 0px 12px 22px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navbar__item {
+  color: var(--black_color);
+  font-family: var(--HK);
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.navbar__item:hover {
+  color: var(--button_color);
+}
+
+.navbar__button {
+  color: #7c14fd;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 16px 48px;
+  background-color: transparent;
+  border: 2px solid #7c14fd;
+  border-radius: 41px;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.navbar__button:hover {
+  color: var(--button_color);
+  border-color: var(--button_color);
+}
+
+/* ================================= Navbar Part CSS End ================================ */
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+/* ================================= Banner Part CSS Start ================================ */
+
+#bannerPart {
+  padding: 170px 0 260px;
+  background: url(../image/banner_wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L60,144C120,160,240,192,360,202.7C480,213,600,203,720,176C840,149,960,107,1080,90.7C1200,75,1320,85,1380,90.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> */
+}
+
+.bannerPart__title {
+  color: var(--Black, #000);
+  font-family: var(--PT);
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 115.7%;
+  letter-spacing: -1.14px;
+  margin-bottom: 30px;
+}
+
+.bannerPart__summary {
+  color: #b070ff;
+  font-family: var(--HK);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 119.7%;
+  opacity: 0.8;
+}
+
+/* ================================= Banner Part CSS End ================================ */
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+/* ================================= Card Part CSS Start ================================ */
+
+.cardPartItem {
+  padding: 108px 20px 41px;
+  background-color: #faf6ff;
+  border: 2px solid var(--white_color);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 66px;
+  box-shadow: 0px 86px 114px 0px rgba(124, 20, 253, 0.14);
+}
+
+.cardPartItem__title {
+  color: var(--black_color);
+  font-family: var(--PT);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37.6px;
+}
+
+.cardPartItem__summary {
+  color: var(--black_color);
+  font-family: var(--HK);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 26px 0 58px;
+}
+
+.cardPartItem__button {
+  padding: 13px 24px 13px;
+  background-color: var(--button_color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: var(--white_color);
+  font-family: var(--HK);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.cardPartItem__buttonIcon {
+  padding-left: 20px;
+}
+
+.cardPartItem__pagePrevious {
+  color: var(--black_color);
+  font-family: var(--PT);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cardPartItem__pageNumber {
+  color: var(--black_color);
+  font-family: var(--PT);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cardPartItem__pageNext {
+  color: var(--button_color);
+  font-family: var(--PT);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ================================= Card Part CSS End ================================ */
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+/* ================================= Strategy Part CSS Start ================================ */
+
+#strategyPart {
+  padding: 0 0 100px;
+}
+
+.strategyPart_ctRow {
+  column-gap: 97px;
+}
+
+.strategyPartLeft__title {
+  color: var(--black_color);
+  text-align: center;
+  font-family: var(--PT);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 137.2%;
+}
+
+.strategyPartLeft__summary {
+  color: #32046b;
+  text-align: center;
+  font-family: var(--HK);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 42.5px;
+  letter-spacing: 0.2px;
+  margin: 18px 0 80px;
+}
+
+.strategyPartLeft__button {
+  padding: 33px 36px;
+  background-color: #7c14fd;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  box-shadow: 0px 26px 46px 0px rgba(124, 20, 253, 0.35);
+
+  color: var(--white_color, #fff);
+  font-family: var(--HK);
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 145px;
+}
+
+/* ================================= Strategy Part CSS End ================================ */
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+/* ================================= Footer Part CSS Start ================================ */
+
+#footerPart {
+  background: url(../image/footer_image.png);
+  padding: 450px 0 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footerItem1__details {
+  max-width: 175px;
+  color: var(--white_color, #fff);
+  font-family: var(--HK);
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+  margin-top: 40px;
+}
+
+.footerItem1__contact{
+  color: var(--white_color, #fff);
+  font-family: var(--HK);
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footer_social{
+  margin-top: 47px;
+}
+
+.footer__socialIcon1{
+  color: var(--white_color, #fff);
+  font-size: 20px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.footer__socialIcon{
+  color: var(--white_color, #fff);
+  font-size: 20px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.footer__socialIcon1:hover {
+  color: #7c14fd;
+}
+
+.footer__socialIcon:hover {
+  color: #7c14fd;
+}
+
+.footer__socialIcon{
+  padding-left: 22px;
+}
+
+.footerItem2 {
+  margin-left: 30px;
+}
+
+.footerItem2__title {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+
+.footerItem2__child{
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footerItem3__title {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+
+.footerItem3__child{
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footerItem4__title {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footerItem4Box{
+  max-width: 291px;
+  height: 200px;
+  border-radius: 20px;
+  background: #9a48ff;
+  box-shadow: 0px 69px 114px 0px rgba(124, 20, 253, 0.08);
+  margin-top: 15px;
+}
+
+/* ================================= Footer Part CSS End ================================ */
